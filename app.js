@@ -9,7 +9,6 @@ Author: J Simplicio
 
 function isValid() {
 	var cardNumber = prompt('Qual o numero do seu cartao?');
-  	var isValid;
   	var arrayNumberInverted = [];
 	var sum = 0;
 
@@ -41,8 +40,10 @@ function isValid() {
 
 	//O número do cartao é valido se for divisível por 10
 	if ( sum % 10 === 0){
-    	return isValid = true;
+    	alert('É válido');
   	}else {
-    	return isValid = false;
+    	alert ("Não é válido");
   	}
 }
+
+isValid();
