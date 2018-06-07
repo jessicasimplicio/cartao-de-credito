@@ -1,8 +1,5 @@
 # Cartão de Crédito
 
-Heading
-=======
-
 ## Objetivo:
 
 Implementação do algoritmo de Luhn para validação de número de cartão de crédito.
