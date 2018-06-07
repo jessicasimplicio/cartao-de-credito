@@ -1,15 +1,14 @@
 function isValid() {
 	var cardNumber = prompt('Qual o numero do seu cartao?');
-  var isValid;
-	//while ( cardNumber === '') {
-	//  cardNumber = prompt ("Por favor insira um número");
-	//}
-
-	var cardNumberLength = cardNumber.length;
-	var arrayNumberInverted = [];
+  	var isValid;
+  	var arrayNumberInverted = [];
 	var sum = 0;
 
-	for (var i = cardNumberLength - 1; i >= 0; i--) {
+	while ( cardNumber === '') {
+	  cardNumber = prompt ("Por favor insira um número");
+	}
+
+	for (var i = cardNumber.length - 1; i >= 0; i--) {
 		arrayNumberInverted.push(cardNumber.charAt(i));
 	}
   
