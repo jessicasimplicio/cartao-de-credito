@@ -7,7 +7,7 @@ Author: J Simplicio
 
 */
 
-function isValid() {
+function isValidCard() {
 	var cardNumber = prompt('Qual o numero do seu cartao?');
   	var arrayNumberInverted = [];
 	var sum = 0;
@@ -46,4 +46,4 @@ function isValid() {
   	}
 }
 
-isValid();
+isValidCard();
