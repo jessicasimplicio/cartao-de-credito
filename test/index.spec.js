@@ -8,7 +8,22 @@ describe("index", function() {
 
 	describe("#cardValidator", function() {
 
-		describe.only("when is empty", function() {
+		describe("when is empty", function() {
+			it("should throw an error", function() {
+				expect(() => index.cardValidator("")).to.throw(TypeError);
+				expect(() => index.cardValidator()).to.throw(TypeError);
+			});
+		});
+
+		describe("when is a string", function() {
+			it("should throw an error", function() {
+				//expect(index.cardValidator('')).to.be.empty;
+				expect(() => index.cardValidator("ola")).to.throw(TypeError);
+				expect(() => index.cardValidator("123")).to.throw(TypeError);
+			});
+		});
+
+		describe("when is an integer number", function() {
 			it("should throw an error", function() {
 				//expect(index.cardValidator('')).to.be.empty;
 				expect(() => index.cardValidator()).to.throw(TypeError);
@@ -16,9 +31,13 @@ describe("index", function() {
 			});
 		});
 
+
+
+
+
 	});
 
-	describe("#badFn", function() {
+	/*describe("#badFn", function() {
 
 		describe.only("when is empty", function() {
 			it("should throw an error", function() {
@@ -28,7 +47,7 @@ describe("index", function() {
 			});
 		});
 
-	});
+	});*/
 
 
 	
