@@ -1,13 +1,50 @@
-/*
-Laboratoria - Final Product 1
-Credit Card validation - Luhn algorithm
+//module.exports.cardValidator = 
+function cardValidator(cardNumber) {
 
-Author: J Simplicio
-06/07/2018
+	//Se é vazio ====> ou null??
+	if (cardNumber === undefined || cardNumber === "") {
+				
+		//throw new TypeError('Vazio!');
+		console.log("Vazio");
+		return cardNumber;
+	}
 
-*/
+	//String 
+	if (typeof cardNumber === "string"){
+			console.log("String");
+	}
 
-function isValidCard() {
+	//è numero
+	if (typeof cardNumber === "number"){
+
+		if(Number.isInteger(cardNumber)){
+			if (cardNumber.toString().length !== 13){
+				console.log("NUmero deve ter 13 digitos");
+			} else {
+				console.log("NUmero tem 13 digitos");
+			}
+
+		} else{
+			console.log("Numero nao inteiro");
+		}
+	}
+}
+
+
+
+module.exports.badFn = function badFn() { throw new TypeError('Illegal salmon!'); };
+
+//cardValidator("");
+//cardValidator();
+//cardValidator("1fga23 ajsai 34");
+//cardValidator("123");
+//cardValidator(123);
+//cardValidator(1234567890123);
+
+
+
+
+/*function isValidCard() {
 	var cardNumber = prompt('Qual o numero do seu cartao?');
   	var arrayNumberInverted = [];
 	var sum = 0;
@@ -43,7 +80,5 @@ function isValidCard() {
     	alert('É válido');
   	}else {
     	alert ("Não é válido");
-  	}
-}
-
-isValidCard();
+  }
+}*/

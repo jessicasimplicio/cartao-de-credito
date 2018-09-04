@@ -1,0 +1,29 @@
+{
+  "name": "cartao-de-credito",
+  "version": "1.0.0",
+  "description": "Library for credit's cards validation",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicasimplicio/cartao-de-credito.git"
+  },
+  "keywords": [
+    "credit-cards"
+  ],
+  "author": "Jessica Simplicio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicasimplicio/cartao-de-credito/issues"
+  },
+  "homepage": "https://github.com/jessicasimplicio/cartao-de-credito#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
