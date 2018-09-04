@@ -1,10 +1,10 @@
-//module.exports.cardValidator = 
+module.exports.cardValidator = 
 function cardValidator(cardNumber) {
 
 	//Se é vazio ====> ou null??
 	if (cardNumber === undefined || cardNumber === "") {
 				
-		//throw new TypeError('Vazio!');
+		throw new TypeError('Vazio!');
 		console.log("Vazio");
 		return cardNumber;
 	}
@@ -14,7 +14,7 @@ function cardValidator(cardNumber) {
 			console.log("String");
 	}
 
-	//è numero
+	//É numero
 	if (typeof cardNumber === "number"){
 
 		if(Number.isInteger(cardNumber)){

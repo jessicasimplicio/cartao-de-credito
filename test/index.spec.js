@@ -10,8 +10,8 @@ describe("index", function() {
 
 		describe.only("when is empty", function() {
 			it("should throw an error", function() {
-				expect(index.cardValidator('')).to.be.empty;
-				//expect(index.cardValidator()).to.throw(TypeError);
+				//expect(index.cardValidator('')).to.be.empty;
+				expect(() => index.cardValidator()).to.throw(TypeError);
 
 			});
 		});
